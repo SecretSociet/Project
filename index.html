@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initional-scale=1.0">
+        <style>
+            body {
+   height: 100vh;
+   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('https://www.todoestudo.com.br/wp-content/uploads/2018/07/Pero-vaz-de-caminha.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 0;
+  }
+
+  #texto {
+  position: absolute;
+  top: -100px;
+  transition: top 2s;
+  color: white;
+  font-size: 70px;
+  color: black;
+  }
+
+  #butão {
+  margin-top: 20px;
+  background-color: black;
+  font-size: 35px;
+  color: white;
+  }
+        </style>
+    </head>
+    <body>
+        <h1 id="texto">A Carta</h1>
+        <button id="butão" style="display: none;">Começar</button>
+        <script>
+            const animatedText = document.getElementById('texto');
+const button = document.getElementById('butão');
+
+animatedText.style.top = '0px';
+setTimeout (() => {
+    texto.style.top = '27vh';
+}, 1000)
+
+setTimeout(() => {
+  butão.style.display = 'block';
+}, 3000);
+butão.addEventListener('click', function() {
+    window.open('continuação1.html', '_blank'); 
+});
+        </script>
+        <!--Comentário para deixar salvo que esse arquivo é um possível jogo, foi postado em 2/09/24 por secretsociet.-->
+    </body>
+</html>
